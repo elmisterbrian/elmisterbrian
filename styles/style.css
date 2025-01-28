@@ -1,0 +1,244 @@
+/* margen usado entre los contenedores 15px
+margen usado a los costados 15px */
+
+:root {
+    --principal-color: #28A8EA;
+    --secondary-color: #1E2531;
+    --text-color: #5D68A1;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100%;
+    height: 55px;
+    background-color: var(--principal-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Inria Sans", serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: white;
+}
+header p {
+    margin: 0px 10px;
+}
+header p a {
+    color: white;
+}
+/* header terminado */
+main {
+    font-family: "Inter", serif;
+}
+.presentation {
+    width: 100%;
+}
+.presentation h1 {
+    margin-top: 30px;
+    margin-left: 15px;
+    font-size: 3.6rem;
+}
+.presentation h1 span {
+    background: linear-gradient(73deg, #0198EA, #14BCFA);
+    background-clip: text;
+    color: transparent;
+}
+.presentation p {
+    margin: 0px 15px;
+    font-size: 1.2rem;
+}
+.presentation_img--container figure {
+    width: 80%;
+    margin: 0 auto;
+}
+.presentation_img--container img {
+    width: 100%;
+    height: 100%;
+}
+/* presentacion terminada */
+.service-presentation {
+    width: 100%;
+}
+.service-presentation .service__details h1 {
+    font-weight: bold;
+    font-size: 2.4rem;
+    margin: 15px 15px;
+}
+.service-presentation .service__details span {
+    color: var(--principal-color);
+}
+.service-presentation .service__details p {
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin: 0 15px;
+    color: var(--text-color);
+}
+.service-presentation .service__buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.service__buttons .buttons {
+    width: 75%;
+    max-width: 425px;
+    height: 64px;
+    background-color: var(--principal-color);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+.service__buttons .color-change {
+    background-color: var(--secondary-color);
+}
+.service__buttons .buttons img {
+    width: 15px;
+    height: 15px;
+    justify-self: center;
+}
+/* Presentación del servicio terminada */
+.about_me {
+    width: 100%;
+    margin-top: 30px;
+}
+.about_me .about_me--introduction h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin: 15px 15px;
+}
+.about_me .about_me--introduction p {
+    margin: 15px 15px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.about_me_img--container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.about_me_img--container .img_container {
+    width: 80%;
+    max-width: 500px;
+}
+.about_me_img--container .img_container img {
+    width: 100%;
+    border-radius: 6px;
+}
+/* Sección sobre mí terminada */
+.portfolio {
+    width: 100%;
+}
+.portfolio h1 {
+    font-size: 2.4rem;
+    margin-left: 15px;
+}
+.portfolio span {
+    color: var(--principal-color);
+}
+.portfolio .portfolio_projects_container {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+}
+.portfolio .portfolio_projects_container .portfolio_cards {
+    width: 214px;
+    min-width: 200px;
+    height: 390px;
+    scroll-snap-align: center;
+    margin: 10px;
+    background-color: #1E2531;
+    border-radius: 6px;
+}
+.portfolio .portfolio_projects_container .portfolio_cards a {
+    color: white;
+    text-decoration: none;
+}
+.portfolio_projects_container .card-1, .card-2, .card-3, .card-4 p {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 16px;
+}
+.portfolio_projects_container .card-1 img {
+    width: 500px;
+    position: relative;
+    left: -150px;
+    top: -25px;
+}
+.portfolio_projects_container .card-2 img {
+    width: 500px;
+    position: relative;
+    left: -150px;
+    top: -25px;
+}
+.portfolio_projects_container .card-3 img {
+    width: 500px;
+    position: relative;
+    left: -150px;
+    top: -25px;
+}
+.portfolio_projects_container .card-4 img {
+    width: 500px;
+    position: relative;
+    left: -150px;
+    top: -25px;
+}
+/* sección cards terminada */
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    font-family: "Inria Sans", sans-serif;
+    margin-top: 30px;
+    background-color: var(--secondary-color);
+}
+.call-to-action h1 {
+    margin: 15px;
+    padding-top: 15px;
+    color: white;
+    font-size: 2.4rem;
+}
+.call-to-action .call-to-action_button {
+    display: block;
+    width: 30%;
+    height: 40px;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid white;
+    background-color: var(--principal-color);
+    color: white;
+}
+@media(min-width:768px) {
+    .presentation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .presentation .presentation_info_container {
+        align-self: center;
+    }
+}
+@media(min-width:1024px) {
+    main {
+        margin: 0 80px
+    }
+    .portfolio .portfolio_projects_container {
+        overflow: hidden;
+    }
+}
